@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+    <!-- Incluye Tailwind CSS desde CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <header class="bg-[#ece9e5]">
+    <div
+      class="container mx-auto flex justify-between items-center py-7 px-6 md:w-full font-semibold"
+    >
+      <!-- Logo -->
+      <a href="#" class="flex items-center mr-[150px]">
+        <img
+          src="https://www.percimon.com/wp-content/themes/percimon/images/logo-percimon.svg"
+          alt="Percimon Logo"
+          class="h-10 mt-3 md:mx-0"
+        />
+      </a>
+
+      <!-- Menú Toggle Button -->
+      <button
+        id="menu-toggle"
+        class="md:hidden p-2 bg-blue-500 text-white rounded"
+      >
+        Menu
+      </button>
+
+      <!-- Menú Principal (Desktop) -->
+      <nav class="hidden md:flex space-x-12">
+        <ul class="flex items-center space-x-4">
+          <li>
+            <a href="https://www.percimon.com/cultura/" class="text-[#00c08B]"
+              >CULTURA</a>
+          </li>
+          <li>
+            <a href="https://www.percimon.com/productos/" class="text-[#00c08B]"
+              >PRODUCTOS</a>
+          </li>
+          <li>
+            <a
+              href="https://domicilios.percimon.com/pedir"
+              class="text-[#00c08B]">HAZ TU PEDIDO</a>
+          </li>
+          <li>
+            <a
+              href="https://www.percimon.com/trabaja-con-nosotros/"
+              class="text-[#00c08B]">TRABAJA AQUI</a>
+          </li>
+          <li>
+            <a href="https://percimonorigen.com/inicio/" class="text-[#00c08B]"
+              >ORIGEN</a>
+          </li>
+          <li>
+            <a
+              href="https://www.percimon.com/encuentranos/"
+              class="text-[#00c08B]">ENCUENTRANOS</a>
+          </li>
+          <li>
+            <a href="https://www.percimon.com/contacto/" class="text-[#00c08B]"
+              >CONTACTO</a>
+          </li>
+          <li>
+            <a
+              href="https://www.percimon.net/unipercimon/login/index.php"
+              class="text-[#00c08B]">CAMPUS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Menú Desplegable (Mobile) -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden absolute top-full left-0 w-full bg-[#ece9e5] shadow-lg z-50"
+      >
+        <ul class="flex flex-col items-center space-y-4 py-4">
+          <li>
+            <a href="https://www.percimon.com/cultura/" class="text-[#00c08B]"
+              >CULTURA</a>
+          </li>
+          <li>
+            <a href="https://www.percimon.com/productos/" class="text-[#00c08B]"
+              >PRODUCTOS</a>
+          </li>
+          <li>
+            <a
+              href="https://domicilios.percimon.com/pedir"
+              class="text-[#00c08B]">HAZ TU PEDIDO</a>
+          </li>
+          <li>
+            <a
+              href="https://www.percimon.com/trabaja-con-nosotros/"
+              class="text-[#00c08B]">TRABAJA AQUI</a>
+          </li>
+          <li>
+            <a href="https://percimonorigen.com/inicio/" class="text-[#00c08B]"
+              >ORIGEN</a>
+          </li>
+          <li>
+            <a
+              href="https://www.percimon.com/encuentranos/"
+              class="text-[#00c08B]">ENCUENTRANOS</a>
+          </li>
+          <li>
+            <a href="https://www.percimon.com/contacto/" class="text-[#00c08B]"
+              >CONTACTO</a>
+          </li>
+          <li>
+            <a
+              href="https://www.percimon.net/unipercimon/login/index.php"
+              class="text-[#00c08B]">CAMPUS</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Iconos de Redes Sociales -->
+      <div class="flex space-x-6 mr-5">
+        <a href="http://www.facebook.com/" class="text-[#00c08B]">
+          <i class="bi bi-facebook text-[24px]"></i>
+        </a>
+        <a href="http://www.instagram.com/" class="text-[#00c08B]">
+          <i class="bi bi-instagram text-[24px]"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="flex flex-wrap items-center bg-[#ece9e5]">
+      <div class="w-full lg:w-1/2 p-8">
+        <div class="space-y-14 animate-fade-up">
+          <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+            H E L A D O <br />D E
+            <br /> Y O G U R T
+          </h1>
+          <p class="text-gray-400 text-lg ml-[130px] font-semibold">
+            Suave helado de yogurt. 80% menos grasa y 50% menos<br /> azúcar.
+          </p>
+          <p>
+            <a
+              class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+              href="https://www.percimon.com/productos/yogurt-helado/"
+              >VER MÁS</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 p-4">
+        <div class="animate-fade-in">
+          <img
+            width="1000"
+            height="1000"
+            src="https://www.percimon.com/wp-content/uploads/2021/02/y-helado.png"
+            alt="Yogurt Helado"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center bg-[#fff]">
+      <div class="w-full lg:w-1/2 p-8">
+        <div class="space-y-14 animate-fade-up">
+          <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+            H E L A D O <br />D E
+            <br />A L M E N D R A S
+          </h1>
+          <p class="text-gray-400 text-lg ml-[130px]">
+            Suave helado de leche de almendras. Libre de lácteos, sin gluten y
+            0% azúcar refinada.
+          </p>
+          <p>
+            <a
+              class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+              href="https://www.percimon.com/productos/helado-de-almendras/"
+              >VER MÁS</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 p-4">
+        <div class="animate-fade-in">
+          <img
+            width="1000"
+            height="1000"
+            src="https://www.percimon.com/wp-content/uploads/2021/02/helado-almendras-1.png"
+            alt="Helado de Almendras"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center bg-[#ece9e5]">
+      <div class="w-full lg:w-1/2 p-8">
+        <div class="space-y-14 animate-fade-up">
+          <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+            M I X O
+          </h1>
+          <p class="text-gray-400 text-lg ml-[130px]">
+            Una base de tu helado o yogurt favorito + 4 adiciones normales
+            incluidas.
+          </p>
+          <p>
+            <a
+              class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+              href="https://www.percimon.com/productos/mixo/">VER MÁS</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 p-4">
+        <div class="animate-fade-in">
+          <img
+            width="1000"
+            height="1000"
+            src="https://www.percimon.com/wp-content/uploads/2021/02/mixo-y-helado.png"
+            alt="MIXO"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center bg-[#fff]">
+      <div class="w-full lg:w-1/2 p-8">
+        <div class="space-y-14 animate-fade-up">
+          <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+            P O K E T
+          </h1>
+          <p class="text-gray-400 text-lg ml-[130px]">
+            Una base de torta artesanal acompañada de tu helado o yogurt
+            favorito.
+          </p>
+          <p>
+            <a
+              class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+              href="https://www.percimon.com/productos/poket/">VER MÁS</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 p-4">
+        <div class="animate-fade-in">
+          <img
+            width="1000"
+            height="1000"
+            src="https://www.percimon.com/wp-content/uploads/2021/02/poket-y-helado.png"
+            alt="Poket"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center bg-[#ece9e5]">
+      <div class="w-full lg:w-1/2 p-8">
+        <div class="space-y-14 animate-fade-up">
+          <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+            Y O G U R T <br />G R I E G O
+          </h1>
+          <p class="text-gray-400 text-lg ml-[130px]">
+            Yogurt cuchareable y cremoso, con más contenido de proteína y menos
+            contenido de grasa.
+          </p>
+          <p>
+            <a
+              class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+              href="https://www.percimon.com/productos/yogur-griego/">VER MÁS</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 p-4">
+        <div class="animate-fade-in">
+          <img
+            width="1000"
+            height="1000"
+            src="https://www.percimon.com/wp-content/uploads/2021/02/yogur-griego.png"
+            alt="Yogurt Griego"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center bg-[#fff]">
+      <div class="w-full lg:w-1/2 p-8">
+        <div class="space-y-14 animate-fade-up">
+          <h1 class="text-[#00c08B] text-[60px] font-bold ml-[130px]">
+            C U C U R U C H O S
+          </h1>
+          <p class="text-gray-400 text-lg ml-[130px]">
+            Helado de Yogurt o Helado de Almendras en Cucurucho
+          </p>
+          <p>
+            <a
+              class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+              href="https://www.percimon.com/productos/cucuruchos/">VER MÁS</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 p-4">
+        <div class="animate-fade-in">
+          <img
+            width="1000"
+            height="1000"
+            src="https://www.percimon.com/wp-content/uploads/2021/02/cucurucho-1.png"
+            alt="Cucurucho"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center bg-[#ece9e5]">
+        <div class="w-full lg:w-1/2 p-8">
+          <div class="space-y-14 animate-fade-up">
+            <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+              P A L E T A S
+            </h1>
+            <p class="text-gray-400 text-lg ml-[130px]">
+              Paletas artesanales. Más de 20 sabores deliciosos para disfrutar.
+            </p>
+            <p>
+              <a
+                class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+                href="https://www.percimon.com/productos/paletas/">VER MÁS</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 p-4">
+          <div class="animate-fade-in">
+            <img
+              width="1000"
+              height="1000"
+              src="https://www.percimon.com/wp-content/uploads/2021/02/paletas-frutales.png"
+              alt="Paletas"
+              class="mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center bg-[#fff]">
+        <div class="w-full lg:w-1/2 p-8">
+          <div class="space-y-14 animate-fade-up">
+            <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+              A D I C I O N E S
+            </h1>
+            <p class="text-gray-400 text-lg ml-[130px]">
+              Perfecta combinación de helado y frutas
+            </p>
+            <p>
+              <a
+                class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+                href="https://www.percimon.com/productos/adiciones/">VER MÁS</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 p-4">
+          <div class="animate-fade-in">
+            <img
+              width="1000"
+              height="1000"
+              src="https://www.percimon.com/wp-content/uploads/2021/02/adiciones-para-llevar.png"
+              alt="Adiciones"
+              class="mx-auto"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center bg-[#ece9e5]">
+          <div class="w-full lg:w-1/2 p-8">
+            <div class="space-y-14 animate-fade-up">
+              <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+                P R O D U C T O S <br /> P A R A <br />L L E V A R
+              </h1>
+              <p class="text-gray-400 text-lg ml-[130px]">
+                Para disfrutar y compartir en casa.
+              </p>
+              <p>
+                <a
+                  class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+                  href="https://www.percimon.com/productos/productos-para-llevar/"
+                  >VER MÁS</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 p-4">
+            <div class="animate-fade-in">
+              <img
+                width="1000"
+                height="1000"
+                src="https://www.percimon.com/wp-content/uploads/2021/03/prodctos-circulosy-helado-litro-1.png"
+                alt="Productos para llevar"
+                class="mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center bg-[#fff]">
+          <div class="w-full lg:w-1/2 p-8">
+            <div class="space-y-14 animate-fade-up">
+              <h1 class="text-[#00c08B] text-[65px] font-bold ml-[130px]">
+                T A R J E T A <br /> R E G A L O
+              </h1>
+              <p class="text-gray-400 text-lg ml-[130px]">
+                Ideal para regalar y disfrutar juntos.
+              </p>
+              <p>
+                <a
+                  class="ml-[130px] pl-10 pr-10 btn btn-custom-outline border border-green-500 text-[#00c08B] py-2 px-4 rounded hover:bg-green-500 hover:text-white transition"
+                  href="https://www.percimon.com/productos/tarjeta-de-regalo/"
+                  >VER MÁS</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 p-4">
+            <div class="animate-fade-in">
+              <img
+                width="1000"
+                height="1000"
+                src="https://www.percimon.com/wp-content/uploads/2021/02/bonos.png"
+                alt="Tarjeta de Regalos"
+                class="mx-auto"
+              />
+            </div>
+          </div>
+          <footer
+            class="flex flex-wrap w-full items-center bg-[#00c08B] text-white py-20"
+          >
+            <div id="top-footer" class="container mx-auto px-4">
+              <div class="flex flex-wrap justify-between">
+                <!-- Sección del logo y dirección -->
+                <section
+                  class="w-full md:w-1/2 lg:w-auto mb-10 lg:mb-0 lg:ml-[230px]"
+                >
+                  <a href="https://www.percimon.com/">
+                    <img
+                      src="https://www.percimon.com/wp-content/uploads/2022/08/logo2-1.png"
+                      alt="Percimon Logo"
+                      class="max-w-full h-auto mx-auto lg:mx-0"
+                      width="290"
+                      height="71"
+                      style="z-index: 2;"
+                    />
+                  </a>
+                  <section class="mt-10 lg:mt-[200px]">
+                    <div class="text-center lg:text-left">
+                      <p>
+                        <a
+                          href="https://goo.gl/maps/NXCAv7aA6P2BbHvh7"
+                          target="_blank"
+                          rel="noopener"
+                          class="hover:underline"
+                          >Calle 11 A # 31 A 89. Edificio Bosko</a>
+                      </p>
+                      <br />
+                      <p class="font-bold">
+                        Horario de atención oficina central:
+                      </p>
+                      <p>Lunes a Viernes de 8:00 am a 4:30 pm</p>
+                    </div>
+                  </section>
+                </section>
+                <section
+                  class="w-full md:w-1/2 lg:w-auto mb-10 lg:mb-0 lg:mr-[150px] text-[16px] md:text-[18px] lg:text-[20px]"
+                >
+                  <div class="text-center lg:text-left">
+                    <p>
+                      <a
+                        href="https://www.percimon.com/cultura/"
+                        class="hover:underline">CULTURA</a>
+                    </p>
+                    <p>
+                      <a
+                        href="https://www.percimon.com/productos/"
+                        class="hover:underline">PRODUCTOS</a>
+                    </p>
+                    <p>
+                      <a
+                        href="https://www.percimon.com/trabaja-con-nosotros/"
+                        class="hover:underline">TRABAJA CON NOSOTROS</a>
+                    </p>
+                    <p>
+                      <a
+                        href="https://www.percimon.com/encuentranos/"
+                        class="hover:underline">ENCUÉNTRANOS</a>
+                    </p>
+                    <p>
+                      <a
+                        href="https://www.percimon.com/contacto/"
+                        class="hover:underline">CONTACTO</a>
+                    </p>
+                    <p>
+                      <a
+                        href="https://www.percimon.com/autorizacion-para-el-tratamiento-de-datos-personales/"
+                        class="hover:underline">POLÍTICA DE PRIVACIDAD</a>
+                    </p>
+                    <p>
+                      <a
+                        href="https://www.percimon.com/autorizacion-para-el-tratamiento-de-datos-personales"
+                        class="hover:underline"
+                        >AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES</a>
+                    </p>
+                    <p>
+                      <a
+                        href="https://www.percimon.com/aviso-de-privacidad/"
+                        class="hover:underline">AVISO DE PRIVACIDAD</a>
+                    </p>
+
+                    <!-- Sección de redes sociales -->
+                    <section
+                      class="w-full flex justify-center lg:justify-normal ml-0 mt-10"
+                    >
+                      <ul class="flex space-x-4">
+                        <li>
+                          <a
+                            href="https://www.facebook.com/percimonhelados"
+                            class="text-blue-600 hover:text-blue-800 social-icon"
+                            aria-label="Facebook"
+                          >
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/percimon/"
+                            class="text-pink-600 hover:text-pink-800 social-icon"
+                            aria-label="Instagram"
+                          >
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/in/your-profile"
+                            class="text-blue-700 hover:text-blue-900 social-icon"
+                            aria-label="LinkedIn"
+                          >
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://open.spotify.com/user/your-spotify-id"
+                            class="text-green-600 hover:text-green-800 social-icon"
+                            aria-label="Spotify"
+                          >
+                            <i class="fab fa-spotify"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div id="bottom-footer" class="container mx-auto mt-6">
+              <div
+                class="flex w-full justify-center items-center font-extrabold lg:mt-20"
+              >
+                <p>TODOS LOS DERECHOS RESERVADOS ® 2024</p>
+              </div>
+            </div>
+          </footer>
+          <!-- <footer class="flex flex-wrap w-full items-center bg-[#00c08B] text-white py-20">
+                                    <div id="top-footer" class="container mx-auto">
+                                        <div class="flex flex-wrap justify-between">
+                                            <section class="w-full md:w-1/2 lg:w-auto mb-[260px] ml-[220px]">
+                                                <a href="https://www.percimon.com/">
+                                                    <img src="https://www.percimon.com/wp-content/uploads/2022/08/logo2-1.png" alt="Percimon Logo" class="max-w-full h-auto mx-auto lg:mx-0 " width="290" height="71" style="z-index: 2;">
+                                                </a>
+                                                <section class="w-full md:w-1/2 lg:w-auto mt-[200px] lg:mb-0">
+                                                    <div class="text-center lg:text-left">
+                                                        <p><a href="https://goo.gl/maps/NXCAv7aA6P2BbHvh7" target="_blank" rel="noopener" class="hover:underline">Calle 11 A # 31 A 89. Edificio Bosko</a></p> <br>
+                                                        <p class="font-bold">Horario de atención oficina central:</p>
+                                                        <p>Lunes a Viernes de 8:00 am a 4:30 pm</p>
+                                                    </div>
+                                                </section>
+                                            </section>
+                                            
+                                            <section class="w-full md:w-1/2 lg:w-auto mb-4 mr-[200px] text-[20px]">
+                                                <div class="text-center lg:text-left">
+                                                    <p><a href="https://www.percimon.com/cultura/" class="hover:underline">CULTURA</a></p>
+                                                    <p><a href="https://www.percimon.com/productos/" class="hover:underline">PRODUCTOS</a></p>
+                                                    <p><a href="https://www.percimon.com/trabaja-con-nosotros/" class="hover:underline">TRABAJA CON NOSOTROS</a></p>
+                                                    <p><a href="https://www.percimon.com/encuentranos/" class="hover:underline">ENCUÉNTRANOS</a></p>
+                                                    <p><a href="https://www.percimon.com/contacto/" class="hover:underline">CONTACTO</a></p>
+                                                    <p><a href="https://www.percimon.com/autorizacion-para-el-tratamiento-de-datos-personales/" class="hover:underline">POLÍTICA DE PRIVACIDAD</a></p>
+                                                    <p><a href="https://www.percimon.com/autorizacion-para-el-tratamiento-de-datos-personales" class="hover:underline">AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES</a></p>
+                                                    <p><a href="https://www.percimon.com/aviso-de-privacidad/" class="hover:underline">AVISO DE PRIVACIDAD</a></p>
+                                                    <section class="w-full flex lg:justify-around mt-[100px]">
+                                                        <ul class="flex space-x-4">
+                                                            <li>
+                                                                <a href="https://www.facebook.com/percimonhelados" class="text-blue-600 hover:text-blue-800 social-icon" aria-label="Facebook">
+                                                                    <i class="fab fa-facebook-f"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/percimon/" class="text-pink-600 hover:text-pink-800 social-icon" aria-label="Instagram">
+                                                                    <i class="fab fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.linkedin.com/in/your-profile" class="text-blue-700 hover:text-blue-900 social-icon" aria-label="LinkedIn">
+                                                                    <i class="fab fa-linkedin-in"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://open.spotify.com/user/your-spotify-id" class="text-green-600 hover:text-green-800 social-icon" aria-label="Spotify">
+                                                                    <i class="fab fa-spotify"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </section>
+                                                    
+                                                </div>
+
+                                            </section>
+                                            
+                                        </div>
+                                    </div>
+                                    <div id="bottom-footer" class="container mx-auto mt-6">
+                                        <div class="flex  w-full justify-center items-center font-extrabold">
+                                            
+                                                <p> TODOS LOS DERECHOS RESERVADOS ® 2024 </p>
+                                            
+                                        </div>
+                                    </div>
+                                </footer> -->
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const menuToggle = document.getElementById("menu-toggle");
+              const mobileMenu = document.getElementById("mobile-menu");
+              if (menuToggle && mobileMenu) {
+                console.log("Elementos encontrados");
+                menuToggle.addEventListener("click", function () {
+                  mobileMenu.classList.toggle("hidden");
+                });
+              } else {
+                console.error("Elementos del menú no encontrados");
+              }
+            });
+          </script>
+        </div>
+      </div>
+      <style>
+        #mobile-menu {
+          position: static;
+          margin-top: 0px;
+          padding: 0px;
+          width: 100%;
+          background-color: #ece9e5;
+          z-index: 50;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      </style>
+    </div></body>
+</html>
