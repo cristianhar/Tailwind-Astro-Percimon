@@ -15,7 +15,11 @@ Optimizar el diseño y la presentación del menú de helados para garantizar que
 
 ## Vista Previa
 
+# Escritorio
 ![Vista Previa](public/preview.png)
+
+# Mobile
+![Vista Previa](public/previewmobile.png)
 ## Instalación del Repositorio
 
 1. Clona este repositorio en tu máquina local:
