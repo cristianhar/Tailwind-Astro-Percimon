@@ -18,125 +18,53 @@
     />
   </head>
 
-  <header class="bg-[#ece9e5]">
-    <div
-      class="container mx-auto flex justify-between items-center py-7 px-6 md:w-full font-semibold"
-    >
-      <!-- Logo -->
-      <a href="#" class="flex items-center mr-[150px]">
-        <img
-          src="https://www.percimon.com/wp-content/themes/percimon/images/logo-percimon.svg"
-          alt="Percimon Logo"
-          class="h-10 mt-3 md:mx-0"
-        />
-      </a>
+  <header id="header" class="bg-[#ece9e5] header-hidden">
+    <div class="container mx-auto flex justify-between items-center py-7 px-6 md:w-full font-semibold">
+        <nav class="flex items-center justify-between w-full">
+            <img src="https://www.percimon.com/wp-content/themes/percimon/images/logo-percimon.svg" alt="Percimon Logo"
+                class="h-10 mt-3" />
 
-      <!-- Menú Toggle Button -->
-      <button
-        id="menu-toggle"
-        class="md:hidden p-2 bg-blue-500 text-white rounded"
-      >
-        Menu
-      </button>
+                <div class="hidden md:flex space-x-12">
+                <a href="https://www.percimon.com/cultura/" class="text-[#00c08B]">CULTURA</a>
+                <a href="https://www.percimon.com/productos/" class="text-[#00c08B]">PRODUCTOS</a>
+                <a href="https://domicilios.percimon.com/pedir" class="text-[#00c08B]">HAZ TU PEDIDO</a>
+                <a href="https://www.percimon.com/trabaja-con-nosotros/" class="text-[#00c08B]">TRABAJA AQUI</a>
+                <a href="https://percimonorigen.com/inicio/" class="text-[#00c08B]">ORIGEN</a>
+                <a href="https://www.percimon.com/encuentranos/" class="text-[#00c08B]">ENCUENTRANOS</a>
+                <a href="https://www.percimon.com/contacto/" class="text-[#00c08B]">CONTACTO</a>
+                <a href="https://www.percimon.net/unipercimon/login/index.php" class="text-[#00c08B]">CAMPUS</a>
+            </div>
 
-      <!-- Menú Principal (Desktop) -->
-      <nav class="hidden md:flex space-x-12">
-        <ul class="flex items-center space-x-4">
-          <li>
-            <a href="https://www.percimon.com/cultura/" class="text-[#00c08B]"
-              >CULTURA</a>
-          </li>
-          <li>
-            <a href="https://www.percimon.com/productos/" class="text-[#00c08B]"
-              >PRODUCTOS</a>
-          </li>
-          <li>
-            <a
-              href="https://domicilios.percimon.com/pedir"
-              class="text-[#00c08B]">HAZ TU PEDIDO</a>
-          </li>
-          <li>
-            <a
-              href="https://www.percimon.com/trabaja-con-nosotros/"
-              class="text-[#00c08B]">TRABAJA AQUI</a>
-          </li>
-          <li>
-            <a href="https://percimonorigen.com/inicio/" class="text-[#00c08B]"
-              >ORIGEN</a>
-          </li>
-          <li>
-            <a
-              href="https://www.percimon.com/encuentranos/"
-              class="text-[#00c08B]">ENCUENTRANOS</a>
-          </li>
-          <li>
-            <a href="https://www.percimon.com/contacto/" class="text-[#00c08B]"
-              >CONTACTO</a>
-          </li>
-          <li>
-            <a
-              href="https://www.percimon.net/unipercimon/login/index.php"
-              class="text-[#00c08B]">CAMPUS</a>
-          </li>
-        </ul>
-      </nav>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-[#00c08B] focus:outline-none">
+                    <i class="bi bi-list text-3xl"></i>
+                </button>
+            </div>
+        </nav>
 
-      <!-- Menú Desplegable (Mobile) -->
-      <div
-        id="mobile-menu"
-        class="md:hidden hidden absolute top-full left-0 w-full bg-[#ece9e5] shadow-lg z-50"
-      >
-        <ul class="flex flex-col items-center space-y-4 py-4">
-          <li>
-            <a href="https://www.percimon.com/cultura/" class="text-[#00c08B]"
-              >CULTURA</a>
-          </li>
-          <li>
-            <a href="https://www.percimon.com/productos/" class="text-[#00c08B]"
-              >PRODUCTOS</a>
-          </li>
-          <li>
-            <a
-              href="https://domicilios.percimon.com/pedir"
-              class="text-[#00c08B]">HAZ TU PEDIDO</a>
-          </li>
-          <li>
-            <a
-              href="https://www.percimon.com/trabaja-con-nosotros/"
-              class="text-[#00c08B]">TRABAJA AQUI</a>
-          </li>
-          <li>
-            <a href="https://percimonorigen.com/inicio/" class="text-[#00c08B]"
-              >ORIGEN</a>
-          </li>
-          <li>
-            <a
-              href="https://www.percimon.com/encuentranos/"
-              class="text-[#00c08B]">ENCUENTRANOS</a>
-          </li>
-          <li>
-            <a href="https://www.percimon.com/contacto/" class="text-[#00c08B]"
-              >CONTACTO</a>
-          </li>
-          <li>
-            <a
-              href="https://www.percimon.net/unipercimon/login/index.php"
-              class="text-[#00c08B]">CAMPUS</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Iconos de Redes Sociales -->
-      <div class="flex space-x-6 mr-5">
-        <a href="http://www.facebook.com/" class="text-[#00c08B]">
-          <i class="bi bi-facebook text-[24px]"></i>
-        </a>
-        <a href="http://www.instagram.com/" class="text-[#00c08B]">
-          <i class="bi bi-instagram text-[24px]"></i>
-        </a>
+        <div class="hidden md:flex space-x-6 mr-5 ml-10">
+          <a href="http://www.facebook.com/" class="text-[#00c08B]">
+              <i class="bi bi-facebook text-[24px]"></i>
+          </a>
+          <a href="http://www.instagram.com/" class="text-[#00c08B]">
+              <i class="bi bi-instagram text-[24px]"></i>
+          </a>
       </div>
     </div>
-  </header>
+
+    <div id="mobile-menu" class="hidden md:hidden">
+        <nav class="flex flex-col items-center space-y-4 py-4">
+            <a href="https://www.percimon.com/cultura/" class="text-[#00c08B]">CULTURA</a>
+            <a href="https://www.percimon.com/productos/" class="text-[#00c08B]">PRODUCTOS</a>
+            <a href="https://domicilios.percimon.com/pedir" class="text-[#00c08B]">HAZ TU PEDIDO</a>
+            <a href="https://www.percimon.com/trabaja-con-nosotros/" class="text-[#00c08B]">TRABAJA AQUI</a>
+            <a href="https://percimonorigen.com/inicio/" class="text-[#00c08B]">ORIGEN</a>
+            <a href="https://www.percimon.com/encuentranos/" class="text-[#00c08B]">ENCUENTRANOS</a>
+            <a href="https://www.percimon.com/contacto/" class="text-[#00c08B]">CONTACTO</a>
+            <a href="https://www.percimon.net/unipercimon/login/index.php" class="text-[#00c08B]">CAMPUS</a>
+        </nav>
+    </div>
+</header>
   <body>
     <div class="flex flex-wrap items-center bg-[#ece9e5]">
       <div class="w-full lg:w-1/2 p-8">
@@ -520,8 +448,6 @@
                         href="https://www.percimon.com/aviso-de-privacidad/"
                         class="hover:underline">AVISO DE PRIVACIDAD</a>
                     </p>
-
-                    <!-- Sección de redes sociales -->
                     <section
                       class="w-full flex justify-center lg:justify-normal ml-0 mt-10"
                     >
@@ -576,97 +502,23 @@
               </div>
             </div>
           </footer>
-          <!-- <footer class="flex flex-wrap w-full items-center bg-[#00c08B] text-white py-20">
-                                    <div id="top-footer" class="container mx-auto">
-                                        <div class="flex flex-wrap justify-between">
-                                            <section class="w-full md:w-1/2 lg:w-auto mb-[260px] ml-[220px]">
-                                                <a href="https://www.percimon.com/">
-                                                    <img src="https://www.percimon.com/wp-content/uploads/2022/08/logo2-1.png" alt="Percimon Logo" class="max-w-full h-auto mx-auto lg:mx-0 " width="290" height="71" style="z-index: 2;">
-                                                </a>
-                                                <section class="w-full md:w-1/2 lg:w-auto mt-[200px] lg:mb-0">
-                                                    <div class="text-center lg:text-left">
-                                                        <p><a href="https://goo.gl/maps/NXCAv7aA6P2BbHvh7" target="_blank" rel="noopener" class="hover:underline">Calle 11 A # 31 A 89. Edificio Bosko</a></p> <br>
-                                                        <p class="font-bold">Horario de atención oficina central:</p>
-                                                        <p>Lunes a Viernes de 8:00 am a 4:30 pm</p>
-                                                    </div>
-                                                </section>
-                                            </section>
-                                            
-                                            <section class="w-full md:w-1/2 lg:w-auto mb-4 mr-[200px] text-[20px]">
-                                                <div class="text-center lg:text-left">
-                                                    <p><a href="https://www.percimon.com/cultura/" class="hover:underline">CULTURA</a></p>
-                                                    <p><a href="https://www.percimon.com/productos/" class="hover:underline">PRODUCTOS</a></p>
-                                                    <p><a href="https://www.percimon.com/trabaja-con-nosotros/" class="hover:underline">TRABAJA CON NOSOTROS</a></p>
-                                                    <p><a href="https://www.percimon.com/encuentranos/" class="hover:underline">ENCUÉNTRANOS</a></p>
-                                                    <p><a href="https://www.percimon.com/contacto/" class="hover:underline">CONTACTO</a></p>
-                                                    <p><a href="https://www.percimon.com/autorizacion-para-el-tratamiento-de-datos-personales/" class="hover:underline">POLÍTICA DE PRIVACIDAD</a></p>
-                                                    <p><a href="https://www.percimon.com/autorizacion-para-el-tratamiento-de-datos-personales" class="hover:underline">AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES</a></p>
-                                                    <p><a href="https://www.percimon.com/aviso-de-privacidad/" class="hover:underline">AVISO DE PRIVACIDAD</a></p>
-                                                    <section class="w-full flex lg:justify-around mt-[100px]">
-                                                        <ul class="flex space-x-4">
-                                                            <li>
-                                                                <a href="https://www.facebook.com/percimonhelados" class="text-blue-600 hover:text-blue-800 social-icon" aria-label="Facebook">
-                                                                    <i class="fab fa-facebook-f"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://www.instagram.com/percimon/" class="text-pink-600 hover:text-pink-800 social-icon" aria-label="Instagram">
-                                                                    <i class="fab fa-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://www.linkedin.com/in/your-profile" class="text-blue-700 hover:text-blue-900 social-icon" aria-label="LinkedIn">
-                                                                    <i class="fab fa-linkedin-in"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://open.spotify.com/user/your-spotify-id" class="text-green-600 hover:text-green-800 social-icon" aria-label="Spotify">
-                                                                    <i class="fab fa-spotify"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </section>
-                                                    
-                                                </div>
-
-                                            </section>
-                                            
-                                        </div>
-                                    </div>
-                                    <div id="bottom-footer" class="container mx-auto mt-6">
-                                        <div class="flex  w-full justify-center items-center font-extrabold">
-                                            
-                                                <p> TODOS LOS DERECHOS RESERVADOS ® 2024 </p>
-                                            
-                                        </div>
-                                    </div>
-                                </footer> -->
           <script>
             document.addEventListener("DOMContentLoaded", function () {
-              const menuToggle = document.getElementById("menu-toggle");
-              const mobileMenu = document.getElementById("mobile-menu");
-              if (menuToggle && mobileMenu) {
+              const menuBtn = document.getElementById("menu-btn");
+              const listamenu = document.getElementById("mobile-menu");
+              if (menuBtn && listamenu) {
                 console.log("Elementos encontrados");
-                menuToggle.addEventListener("click", function () {
-                  mobileMenu.classList.toggle("hidden");
+                menuBtn.addEventListener("click", function () {
+                  listamenu.classList.toggle("hidden");
                 });
               } else {
                 console.error("Elementos del menú no encontrados");
               }
             });
           </script>
+          
         </div>
       </div>
-      <style>
-        #mobile-menu {
-          position: static;
-          margin-top: 0px;
-          padding: 0px;
-          width: 100%;
-          background-color: #ece9e5;
-          z-index: 50;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-      </style>
-    </div></body>
+    </div
+    ></body>
 </html>
