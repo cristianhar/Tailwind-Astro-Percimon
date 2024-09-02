@@ -1,54 +1,51 @@
-# Astro Starter Kit: Basics
+# Actividad: Proyecto de Página Responsive con Astro y Tailwind CSS
+## Descripción:
+  
+Desarrolla una página web simple y responsiva para mostrar un menú de helados utilizando Astro, Tailwind CSS. El objetivo de esta actividad es crear un diseño que se adapte a diferentes dispositivos, tanto móviles como de escritorio, garantizando una experiencia de usuario óptima.
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Requisitos:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Tecnologías: Astro, Tailwind CSS.
+Funcionalidad: La página debe mostrar un menú de helados.
+Diseño: Debe ser totalmente responsivo, adaptándose a dispositivos móviles y de escritorio.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Objetivo:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Optimizar el diseño y la presentación del menú de helados para garantizar que sea accesible y atractivo en cualquier tipo de dispositivo.
 
-## 🚀 Project Structure
+## Vista Previa
 
-Inside of your Astro project, you'll see the following folders and files:
+![Vista Previa](public/preview.png)
+## Instalación del Repositorio
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. Clona este repositorio en tu máquina local:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+   ```bash
+   git clone https://github.com/cristianhar/Tailwind-Astro-Percimon.git
+   cd Tailwind-Astro-Percimon
+2.Instalación de Dependencias de Node
+- Una vez dentro del proyecto, instala las dependencias de Node:
+  ```bash 
+    npm install
+3.Instalación de Astro
+- Inicia un nuevo proyecto Astro:
+  ```bash
+  npm create astro@latest
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Sigue las instrucciones para configurar el proyecto de Astro.
 
-Any static assets, like images, can be placed in the `public/` directory.
+4.Instalación de Tailwind CSS
+ - Añade Tailwind CSS a tu proyecto Astro con el siguiente comando:
 
-## 🧞 Commands
+    ```bash
+   npx astro add tailwind
+-Configura Tailwind siguiendo las instrucciones proporcionadas por Astro.
 
-All commands are run from the root of the project, from a terminal:
+## Ejecución del Proyecto
+- Después de instalar todas las dependencias, puedes ejecutar el proyecto en modo desarrollo:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+    ```bash
+    npm run dev
+Esto abrirá el servidor de desarrollo y podrás ver la página en tu navegador 
+ 
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
